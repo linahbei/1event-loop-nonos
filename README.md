@@ -32,17 +32,17 @@ uint32_t status;
 |Running type|Constant|Description|
 |------------|--------|-----------|
 |Idle|``lEVENT_LOOP_STATUS_IDLE``|SDK initialized or aborted.|
-|Todo|``1EVENT_LOOP_STATUS_TODO``|Function assigned and waiting for execution.|
-|Busy|``1EVENT_LOOP_STATUS_BUSY``|Function already running.|
-|Done|``1EVENT_LOOP_STATUS_DONE``|Function already done.|
+|Todo|``lEVENT_LOOP_STATUS_TODO``|Function assigned and waiting for execution.|
+|Busy|``lEVENT_LOOP_STATUS_BUSY``|Function already running.|
+|Done|``lEVENT_LOOP_STATUS_DONE``|Function already done.|
 
 * Bit 0~3: Exit code
 
 |Exit code type|Constant|Description|
 |------------|--------|-----------|
-|Idle|``1EVENT_LOOP_EXIT_IDLE``|Function initialized, running, or aborted.|
-|Succeed|``1EVENT_LOOP_EXIT_SUCCEED``|Function done and returns succeed.|
-|Failed|``1EVENT_LOOP_EXIT_FAILED``|Function done and returns failed.|
+|Idle|``lEVENT_LOOP_EXIT_IDLE``|Function initialized, running, or aborted.|
+|Succeed|``lEVENT_LOOP_EXIT_SUCCEED``|Function done and returns succeed.|
+|Failed|``lEVENT_LOOP_EXIT_FAILED``|Function done and returns failed.|
 
 ### Control block
 
@@ -50,8 +50,8 @@ uint32_t status;
 
 |SDK defined|Constant|Description|
 |------------|--------|-----------|
-|None|``1EVENT_LOOP_FUNC_NONE``|Nothing to run.|
-|Clear control block|``_1EVENT_LOOP_FUNC_NONE``|A bitwise tool to clear control block to none function. ex. ``status &= ~_1EVENT_LOOP_FUNC_NONE``|
+|None|``lEVENT_LOOP_FUNC_NONE``|Nothing to run.|
+|Clear control block|``_lEVENT_LOOP_FUNC_NONE``|A bitwise tool to clear control block to none function. ex. ``status &= ~_lEVENT_LOOP_FUNC_NONE``|
 
 ### Other SDK defined constants
 
